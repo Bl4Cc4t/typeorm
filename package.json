@@ -1,7 +1,7 @@
 {
   "name": "@bl4cc4t/typeorm",
   "private": true,
-  "version": "0.2.21",
+  "version": "0.2.22",
   "description": "Data-Mapper ORM for TypeScript, ES7, ES6, ES5. Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, Oracle, MongoDB databases.",
   "license": "MIT",
   "readmeFilename": "README.md",
@@ -13,6 +13,7 @@
   "browser": {
     "./browser/driver/postgres/PostgresDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./browser/driver/oracle/OracleDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
+    "./browser/driver/sap/SapDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./browser/driver/mysql/MysqlDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./browser/driver/sqlserver/SqlServerDriver.ts": "./browser/platform/BrowserDisabledDriversDummy.js",
     "./browser/driver/mongodb/MongoDriver.js": "./browser/platform/BrowserDisabledDriversDummy.js",
@@ -46,6 +47,7 @@
     "oracle-orm"
   ],
   "devDependencies": {
+    "@sap/hdbext": "^6.1.1",
     "@types/chai": "^4.1.2",
     "@types/chai-as-promised": "7.1.0",
     "@types/debug": "4.1.2",
